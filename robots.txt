@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+Sitemap: https://site.com/sitemap.xml
+Host: https://site.com
+# It's simple comment

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" manifest="clock.appcache">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="960">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="author" content="Sam Samych">
+  <meta name="keywords" content="barbershop, style">
+  <meta name="description" content="Our services are a great opportunity to monitor yourself">
+  <title>Facility &laquo;Hodgepodge&raquo;</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/icons/favicon.ico">
+  <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
+
+  <link rel="stylesheet" href="css/clock.css">
+  <script src="js/OSC.js"></script>
+  <script src="js/clock.js"></script>
+  <!-- <script src="js/modernizr-custom.js"></script> -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">Your browser is <b>old</b>. Please <a href="http://browsehappy.com/">upgrade</a> it.
+<![endif]-->
+  <noscript style="font-size:25px;color:red;">Included Javascript is necessery for full work of this page.</noscript>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="nojs.html">Sign in</a>
+      </div>
+    </div>
+  </header>
+The time is: <output id='clock'></output>
+  <main class="container">
+    <div class="index-logo">
+      <img src="img/index-logo.png" width="368" height="204" alt="Facility &laquo;Hodgepodge&raquo;">
+    </div>
+    <section class="features clearfix">
+      <div class="features-item">
+        <span class="features-name">Quickly</span>
+        <p>Lorem &mdash; ipsum dolor-sit amet, consectetur &lt;article&gt; adipisicing 50&nbsp;000. Debitis nobis suscipit, iste temporibus sequi at autem magnam repudiandae.</p>
+      </div>
+      <div class="features-item">
+        <span class="features-name">Quality </span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam at recusandae tempore veniam vitae ea, laboriosam nesciunt ipsum tempora dolores?</p>
+      </div>
+      <div class="features-item">
+        <span class="features-name">Cheap</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime obcaecati natus illo accusamus a dolor quae sit voluptate.</p>
+      </div>
+    </section>
+
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <a name="news"><h2 class="index-content-title">News</h2></a>
+        <ul class="news-preview">
+          <li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aspernatur similique eos, itaque, possimus culpa nostrum eveniet blanditiis veniam amet</p>
+            <time datetime="2004-03-14">14 mar</time>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quam ipsum perspiciatis</p>
+            <time datetime="2004-03-29">29 mar</time>
+          </li>
+        </ul>
+        <a class="btn" href="#">All news</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Photogallery</h2>
+        <div class="gallery">
+          <figure class="gallery-content">
+            <a href="img/photogallery-big-1.jpg"><img src="img/photogallery-small-1.jpg" width="280" height="164" alt="Photo 1"></a>
+          </figure>
+          <button class="btn gallery-prev" type="button" disabled>Prev</button>
+          <button class="btn gallery-next" type="button">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <a name="contacts"><h2 class="index-content-title">Contact information</h2></a>
+        <p>
+          Facility «Hodgepodge»<br>
+          Address: 127/2 Stepnova str. Moscow<br>
+          Telephone: +7 (777) 852-45-67
+        </p>
+        <p>
+          Working time:<br>
+          mon - fri: 8:00 to 20:00<br>
+          sat - sun: 8:00 to 16:00
+        </p>
+        <a class="btn js-open-map" href="nojs.html">How to get</a>
+        <a class="btn" href="#">Feedback</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Enroll</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, repellendus.</p>
+        <form class="appointment-form" action="#" method="post">
+          <input type="text" name="date" value="DD/MM" placeholder="Date DD/MM" pattern="(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])" required>
+          <input type="text" name="time" value="HH:MM" placeholder="Time HH:MM" pattern="([0-1]\d|2[0-3])[:]([0-5]\d)" required>
+          <input type="text" name="name" value="Your name" placeholder="Your name" pattern="^[a-zA-Z]+$" maxlength="15" required>
+          <input type="tel" name="phone" value="Phone" placeholder="Phone" pattern="[\d() -]+" maxlength="15" required>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-contacts">
+        <p>
+          Facility «Hodgepodge»<br>
+          Address: 127/2 Stepnova str. Moscow<br>
+          <a href="#">How to find us?</a><br>
+          Telephone: +7 (777) 852-45-67
+        </p>
+      </section>
+      <section class="footer-social">
+        <p>Join us!</p>
+        <a href="#" class="social-btn social-btn-fb">Facebook</a>
+        <a href="#" class="social-btn social-btn-vk">VKontakte</a>
+        <a href="#" class="social-btn social-btn-in">Instagram</a>
+      </section>
+      <section class="footer-copyright">
+        <p>&copy; Developed:</p>
+        <a class="btn" href="#">«The office»</a>
+      </section>
+    </div>
+  </footer>
+
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Close">Close</button>
+    <h2 class="modal-content-title">Your Account</h2>
+    <p>Enter your password and login</p>
+    <form class="login-form" action="#" method="post">
+      <input class="icon-user" type="text" name="login" placeholder="Login">
+      <input class="icon-password" type="password" name="password" placeholder="Password">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember" checked>
+        <span class="checkbox-indicator"></span>
+        Remember me
+      </label>
+      <a class="restore" href="#">Forgot password!</a>
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Close">Close</button>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5909265413127!2d30.321752954214496!3d59.93892987083699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487628521373" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <div id="yandex-map"></div>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5f0282e716b88aff4d64f51e0411852ec99d762f8badb5f7f714e2f92a002840&amp;width=766&amp;height=561&amp;id=yandex-map&amp;lang=en_US&amp;scroll=true"></script>
+  <script src="js/popup.min.js"></script>
+</body>
+</html>
